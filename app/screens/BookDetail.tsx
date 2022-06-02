@@ -118,39 +118,7 @@ const BookDetail = ({ route, navigation }:any) => {
                     <Text style={{ ...FONTS.body3, color: book.navTintColor }}>{book.author}</Text>
                 </View>
 
-                {/* Book Info */}
-                <View
-                    style={{
-                        flexDirection: 'row',
-                        paddingVertical: 20,
-                        margin: 24,
-                        borderRadius: 12,
-                        backgroundColor: "rgba(0,0,0,0.3)"
-                    }}
-                >
-                    {/* Rating */}
-                    <View style={{ flex: 1, alignItems: 'center' }}>
-                        <Text style={{ ...FONTS.h3, color: "#FFFFFF" }}>{book.rating}</Text>
-                        <Text style={{ ...FONTS.body4, color: "#FFFFFF" }}>Rating</Text>
-                    </View>
-
-                    <LineDivider />
-
-                    {/* Pages */}
-                    <View style={{ flex: 1, paddingHorizontal: 12, alignItems: 'center' }}>
-                        <Text style={{ ...FONTS.h3, color: "#FFFFFF" }}>{book.pageNo}</Text>
-                        <Text style={{ ...FONTS.body4, color: "#FFFFFF" }}>Number of Page</Text>
-                    </View>
-
-                    <LineDivider />
-
-                    {/* Language */}
-                    <View style={{ flex: 1, alignItems: 'center' }}>
-                        <Text style={{ ...FONTS.h3, color: "#FFFFFF" }}>{book.language}</Text>
-                        <Text style={{ ...FONTS.body4, color: "#FFFFFF" }}>Language</Text>
-                    </View>
-                </View>
-            </View>
+                            </View>
         )
     }
 
